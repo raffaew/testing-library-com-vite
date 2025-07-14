@@ -1,7 +1,5 @@
 ## Sobre os testes
 
-[**Teste**](https://github.com/raffaew/testing-library-com-vite/blob/main/vite-starter/src/App.test.jsx)
-
 Os testes verificam o comportamento do botão e do checkbox no componente, além de um helper para transformar strings no formato kebab-case para Title Case.
 
 ### Testes principais:
@@ -27,3 +25,5 @@ Os testes verificam o comportamento do botão e do checkbox no componente, além
 - **Testes da função `kebabCaseToTitleCase`**
   - Verifica a conversão correta de strings sem hífen.
   - Verifica a conversão de strings com hífen simples e múltiplos.
+
+[**Veja o arquivo de teste completo**](https://github.com/raffaew/testing-library-com-vite/blob/main/vite-starter/src/App.test.jsx)
