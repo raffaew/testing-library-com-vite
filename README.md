@@ -2,7 +2,7 @@
 
 Este repositório faz parte dos meus estudos sobre testes de componentes React utilizando a biblioteca **React Testing Library** em um projeto criado com **Vite**.
 
-Estou acompanhando o curso [**Aprendendo React Testing Library com Vite**](https://www.udemy.com/course/react-testing-library/?couponCode=KEEPLEARNINGBR) disponível na plataforma Udemy, que aborda os fundamentos e boas práticas de testes automatizados em aplicações React.
+Estou acompanhando o curso [**React Testing Library with Jest / Vitest**](https://www.udemy.com/course/react-testing-library/?couponCode=KEEPLEARNINGBR) disponível na plataforma Udemy, que aborda os fundamentos e boas práticas de testes automatizados em aplicações React.
 
 ## Objetivo
 
