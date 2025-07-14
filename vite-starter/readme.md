@@ -1,5 +1,7 @@
 ## Sobre os testes
 
+[**Teste**](https://github.com/raffaew/testing-library-com-vite/blob/main/vite-starter/src/App.test.jsx)
+
 Os testes verificam o comportamento do botão e do checkbox no componente, além de um helper para transformar strings no formato kebab-case para Title Case.
 
 ### Testes principais:
