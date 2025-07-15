@@ -2,7 +2,7 @@
 
 Os testes verificam o comportamento do botão e do checkbox no componente, além de um helper para transformar strings no formato kebab-case para Title Case.
 
-### Testes principais:
+### 🔍 Testes principais:
 
 - **Fluxo de clique no botão**
   - Renderiza o componente `App`.
