@@ -1,4 +1,4 @@
-# 🧪 Testes do Componente SummaryForm
+## 🧪 Testes do Componente SummaryForm
 
 Este teste cobre o comportamento de um formulário de resumo (`SummaryForm`) com um botão de confirmação, um checkbox de aceitação de termos e um popover de ajuda.
 
