@@ -40,4 +40,4 @@ Os testes verificam o comportamento do **botão** e do **checkbox** no component
 
 ---
 
-📄 Veja o arquivo de teste completo no repositório.
+📄 [Teste](https://github.com/raffaew/testing-library-com-vite/blob/main/vite-starter/src/App.test.jsx)
