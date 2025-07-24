@@ -1,11 +1,13 @@
-import { render, screen } from "@testing-library/react";
+import { render, screen } from "../../../test-utils/testing-library-utils";
 
-import Options from "../Option";
+import Options from "../Options";
 
 test("displays image for each scoop option from server", async () => {
   render(<Options optionType="scoops" />);
 
   //find images
+  //use findAllByRole when you expect the element to appear asynchronously
+  //else use getAllByRole when you expect it to be there immediately
   const scoopImages = await screen.findAllByRole("img", { name: /scoop$/i });
   expect(scoopImages).toHaveLength(2);
 
@@ -26,6 +28,6 @@ test("displays image for each topping option from server", async () => {
   expect(imagesTitles).toEqual([
     "Cherries topping",
     "M&Ms topping",
-    "Hot Fudge topping",
+    "Hot fudge topping",
   ]);
 });
