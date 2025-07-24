@@ -1,27 +1,60 @@
-# sundae-server - DO NOT EDIT
+## 🧪 Testes do Componente SummaryForm
 
-### A server for the "Sundaes on Demand" app in the Udemy course "Testing Library for React"
+Este teste cobre o comportamento de um formulário de resumo (`SummaryForm`) com um botão de confirmação, um checkbox de aceitação de termos e um popover de ajuda.
 
-**Note**: This is an Express server to support the React app in the course. **_Please do not write your React code here._** The React code belongs in the [sundae-starter](../sundae-starter) project.
+---
 
-## Installing
+## 🔍 Sobre os testes
 
-1. Clone or fork the course repository found at [https://github.com/bonnie/udemy-react-testing-library-projects]
-2. `cd` into the `sundae-server` directory (where this README is located).
-3. Run `npm install`
+Os testes verificam:
 
-## Starting the server
+- O comportamento do **botão** e do **checkbox**
+- A exibição do **popover** ao interagir com o texto "terms and conditions"
 
-Run `npm start`. The server will be found at [http://localhost:3030]
+---
 
-## Using the server
+## 🧪 Testes principais
 
-Server routes:
+### 🔹 1. Estado inicial
 
-- `GET /scoops` and `GET /toppings` return sundae options (array of objects with keys `name` and `imagePath`)
-- `POST /order` returns a random order number (does not process order)
-- images via static `/images` directory.
+- Renderiza o componente `SummaryForm`
+- Verifica que o **checkbox** está **desmarcado**
+- Verifica que o **botão** "Confirm Order" está **desabilitado**
 
-## Testing
+---
 
-To test, run `npm test`.
+### 🔹 2. Fluxo do checkbox
+
+- Marca o checkbox
+  - ✅ O botão deve ser **habilitado**
+- Desmarca o checkbox
+  - ✅ O botão deve voltar a ser **desabilitado**
+
+---
+
+### 🔹 3. Comportamento do popover
+
+- Garante que o **popover** com a mensagem "No ice cream will actually be delivered" está **escondido inicialmente**
+- Simula o **hover** sobre o texto "terms and conditions"
+  - ✅ O popover deve **aparecer**
+- Simula o **unhover**
+  - ✅ O popover deve **desaparecer**
+
+---
+
+## 🧰 Tecnologias utilizadas
+
+- `@testing-library/react`
+- `@testing-library/user-event`
+- `Jest` ou `Vitest`
+
+---
+
+## ▶️ Como rodar os testes
+
+```bash
+# Com npm
+npm test
+
+# Ou se estiver usando Vitest
+npx vitest run
