@@ -1,3 +1,6 @@
+<img width="1137" height="403" alt="image" src="https://github.com/user-attachments/assets/1a20a995-eadd-48d9-ac1d-7e18a71c3f1d" />
+
+
 # 📝 To-Do List com Testes Automatizados
 
 Este projeto é uma aplicação simples de lista de tarefas (**To-Do List**) construída em React com funcionalidades de **adicionar**, **editar**, **concluir** e **excluir** tarefas. Os testes automatizados foram desenvolvidos para garantir a confiabilidade da interface e do comportamento dos componentes.
