@@ -8,6 +8,9 @@ Este projeto é uma aplicação simples de lista de tarefas (**To-Do List**) con
 
 Este conjunto de testes cobre o comportamento de uma aplicação de lista de tarefas (To-Do List), composta por um formulário de criação de tarefas, uma lista dinâmica, e botões para edição, conclusão e exclusão das tarefas.
 
+📁 Acesse os testes diretamente em:  
+[`page-to-do-list/src/components/tests`](./src/components/tests)
+
 ---
 
 ## 🔍 Sobre os testes
