@@ -1,6 +1,6 @@
-import type { Task } from '../types/Task';
-import { useState } from 'react';
-
+import type { Task } from "../types/Task";
+import { useState } from "react";
+import "./TodoItem.scss";
 interface Props {
   task: Task;
   onToggle: (id: number) => void;
@@ -26,22 +26,40 @@ export default function TodoItem({ task, onToggle, onDelete, onEdit }: Props) {
             value={editedText}
             onChange={(e) => setEditedText(e.target.value)}
           />
-          <button onClick={handleSave}>Salvar</button>
-          <button onClick={() => setIsEditing(false)}>Cancelar</button>
+          <div className="buttons">
+            <button className="complete-save" onClick={handleSave}>
+              Salvar
+            </button>
+            <button
+              className="delete-cancel"
+              onClick={() => setIsEditing(false)}
+            >
+              Cancelar
+            </button>
+          </div>
         </>
       ) : (
         <>
           <span
             style={{
-              textDecoration: task.completed ? 'line-through' : 'none',
-              marginRight: '10px',
+              textDecoration: task.completed ? "line-through" : "none",
+              marginRight: "10px",
             }}
+            title={task.text}
           >
             {task.text}
           </span>
-          <button onClick={() => onToggle(task.id)}>{task.completed ? 'Desfazer' : 'Concluir'}</button>
-          <button onClick={() => setIsEditing(true)}>Editar</button>
-          <button onClick={() => onDelete(task.id)}>Excluir</button>
+          <div className="buttons">
+            <button className="complete-save" onClick={() => onToggle(task.id)}>
+              {task.completed ? "Desfazer" : "Concluir"}
+            </button>
+            <button className="edit" onClick={() => setIsEditing(true)}>
+              Editar
+            </button>
+            <button className="delete-cancel" onClick={() => onDelete(task.id)}>
+              Excluir
+            </button>
+          </div>
         </>
       )}
     </li>

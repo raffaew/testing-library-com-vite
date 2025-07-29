@@ -4,7 +4,7 @@ import { vi } from "vitest";
 import TodoForm from "../TodoForm";
 
 describe("TodoForm", () => {
-  it("deve renderizar input e botão corretamente", async () => {
+  it("render input", async () => {
     const user = userEvent.setup();
     const mockOnAdd = vi.fn();
 
@@ -28,13 +28,13 @@ describe("TodoForm", () => {
     expect(input).toHaveValue("");
   });
 
-  it('não chama onAdd se o input estiver vazio ou só com espaços', async () => {
+  it('validate empty fields before onadd function', async () => {
     const user = userEvent.setup();
     const mockOnAdd = vi.fn();
 
     render(<TodoForm onAdd={mockOnAdd} />);
 
-    const input = screen.getByPlaceholderText(/digite aqui/i);
+    const input = screen.getByPlaceholderText("O que você precisa fazer hoje?");
     const button = screen.getByRole('button', { name: /adicionar/i });
 
     await user.type(input, ' ');

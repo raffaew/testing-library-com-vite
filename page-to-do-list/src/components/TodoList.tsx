@@ -1,5 +1,6 @@
 import type { Task } from '../types/Task';
 import TodoItem from './TodoItem';
+import "./TodoList.scss"
 
 interface Props {
   tasks: Task[];

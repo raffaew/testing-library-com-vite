@@ -2,6 +2,7 @@ import { useState } from 'react';
 import TodoForm from './components/TodoForm';
 import TodoList from './components/TodoList';
 import type { Task } from './types/Task';
+import "./App.scss"
 
 export default function App() {
   const [tasks, setTasks] = useState<Task[]>([]);
@@ -38,8 +39,7 @@ export default function App() {
   };
 
   return (
-    <div style={{ maxWidth: '500px', margin: '0 auto' }}>
-      <h1>ToDo List com CRUD</h1>
+    <div className='app'>
       <TodoForm onAdd={addTask} />
       <TodoList
         tasks={tasks}
