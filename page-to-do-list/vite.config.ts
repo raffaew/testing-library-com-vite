@@ -9,5 +9,5 @@ export default defineConfig({
     setupFiles: './src/setup.ts', 
     globals: true,                     
   },
-  base: 'testing-library-com-vite',
+  base: '/testing-library-com-vite/',
 })

@@ -12,7 +12,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
-  "homepage": "https://seu-usuario.github.io/nome-do-repositorio",
+  "homepage": "https://github.com/raffaew/testing-library-com-vite",
   "dependencies": {
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
