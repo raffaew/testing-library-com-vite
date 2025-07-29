@@ -9,7 +9,6 @@ form {
 
   label {
     font-size: 20px;
-    
   }
 
   .input-button {
@@ -17,8 +16,6 @@ form {
     width: 100%;
     box-shadow: 3px 10px 3px rgba(0, 0, 0, 0.189);
     border-radius: 10px;
- 
-
 
     input {
       border: none;
@@ -31,8 +28,6 @@ form {
       text-align: start;
       padding: 10px 5px;
       color: black;
-      
-    
     }
 
     button {
@@ -44,11 +39,23 @@ form {
       width: 130px;
       border-radius: 0px 10px 10px 0px;
       color: black;
-       transition: background-color 0.3s ease;
+      transition: background-color 0.3s ease;
 
       &:hover {
         cursor: pointer;
-        background-color: #b1b1b1;;
+        background-color: #b1b1b1;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  form {
+    width: 340px;
+
+    .input-button {
+      input {
+        font-size: 12px;
       }
       
     }

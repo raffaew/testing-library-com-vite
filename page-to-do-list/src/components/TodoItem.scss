@@ -97,3 +97,16 @@ li {
     @include hover-lighten($delete-color-hover);
   }
 }
+
+@media screen and (max-width: 375px) {
+  li {
+    gap: 5px;
+    span {
+      width: 300px;
+      font-size: 15px;
+    }
+    width: 300px;
+    flex-direction: column;
+    align-items: center;
+  }
+}
