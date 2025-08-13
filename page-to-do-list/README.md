@@ -14,6 +14,9 @@ Este conjunto de testes cobre o comportamento de uma aplicação de lista de tar
 📁 Acesse os testes diretamente em:  
 [`page-to-do-list/src/components/tests`](./src/components/tests)
 
+🌐 Acesse o site diretamente em:  
+[https://raffaew.github.io/testing-library-com-vite/](https://raffaew.github.io/testing-library-com-vite/)
+
 ---
 
 ## 🔍 Sobre os testes
